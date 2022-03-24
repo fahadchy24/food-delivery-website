@@ -1,0 +1,13 @@
+/**********************************************
+                Responsive CSS
+***********************************************/
+
+
+/*  Mobile Devices */
+@media only screen and (max-width: 767px) {}
+
+/*  Tablet Devices */
+@media only screen and (min-width: 768px) {}
+
+/*  Desktop Devices */
+@media only screen and (min-width: 1024px) {}
