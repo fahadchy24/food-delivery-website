@@ -4,10 +4,18 @@
 
 
 /*  Mobile Devices */
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
+    .sm-hidden {
+        display: none;
+    }
+}
 
 /*  Tablet Devices */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    .md-hidden {
+        display: none;
+    }
+}
 
 /*  Desktop Devices */
 @media only screen and (min-width: 1024px) {}
