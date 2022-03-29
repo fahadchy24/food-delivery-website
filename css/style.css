@@ -26,14 +26,7 @@ body {
 
 a {
     text-decoration: none;
-}
-
-ul {
-    list-style: none;
-}
-
-li {
-    display: inline-block;
+    color: var(--color-black);
 }
 
 .text-left {
@@ -61,7 +54,7 @@ li {
 }
 
 .container-padding {
-    padding: 80px 100px;
+    padding: 90px 100px;
 }
 
 /*********************************************
@@ -70,10 +63,11 @@ li {
 
 .navbar {
     position: fixed;
+    background-color: var(--color-primary);
     top: 0;
     left: 0;
     width: 100%;
-    height: 100px;
+    height: 80px;
     z-index: 999;
 }
 
@@ -84,18 +78,15 @@ li {
     justify-content: space-between;
 }
 
-/* .navbar .nav-inner .navbar-middle .navbar-right ul li {
-    display: inline-block;
-} */
+.navbar-left {
+    position: relative;
+    margin-left: 40px;
+}
 
 .navbar-left a .logo {
-    position: absolute;
+    background: url(../images/logo.png);
     width: 32px;
     height: 32px;
-    left: 87px;
-    top: 41px;
-
-    background: url(../images/logo.png);
 }
 
 .navbar-left a .logo::before {
@@ -107,6 +98,77 @@ li {
     Left: 40px;
 }
 
+.navbar-right {
+    flex-basis: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-right>*:nth-child(2) {
+    flex-basis: 70%;
+}
+
+.navbar-right>*:nth-child(3) {
+    flex-basis: 30%;
+    padding: 14px;
+}
+
+.navbar-right ul li {
+    display: inline-block;
+    padding-left: 40px;
+}
+
+.navbar-right ul li a {
+    font-size: 1.3rem;
+}
+
+.navbar-right ul li a.active {
+    border-bottom: 2px solid red;
+}
+
+/* .search-cart ul {
+    background-color: var(--color-white);
+    border-radius: 30px;
+} */
+/* .search-cart ul li {
+    padding-left: 0px!important;
+    background-color: var(--color-white);
+    border-radius: 30px;
+    background-color: #228B22;
+} */
+
+.search-cart {
+    position: relative;
+    border-radius: 20px;
+    background: transparent;
+    width: 225px;
+    height: 40px;
+    padding-top: 8px;
+    box-shadow: 1px 2px 80px 3px #f1cbcb;
+}
+
+.search-cart .search {
+    font-size: 1.2rem;
+}
+
+.cart {
+    margin-left: 75px;
+    padding-left: 12px;
+    border-left: 1px solid #b7ad9f;
+    position: relative;
+}
+
+.cart .cart-count {
+    position: absolute;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    width: 22px;
+    height: 22px;
+    top: -14px;
+    border-radius: 50%;
+    text-align: center;
+}
+
 .header-banner {
     width: 100%;
     height: 100%;
@@ -116,10 +178,122 @@ li {
     align-items: center;
 }
 
+.header-info {
+    flex-basis: 50%;
+}
+
+.header-text .fast {
+    position: absolute;
+    width: 261px;
+    height: 119px;
+    left: 87px;
+    top: 242.94px;
+    font-weight: 700;
+    font-size: 125px;
+    line-height: 94.8%;
+    letter-spacing: -0.035em;
+    color: #FF7E00;
+}
+
+.header-text .food-delivery {
+    position: absolute;
+    width: 221px;
+    height: 98px;
+    left: 366px;
+    top: 252.94px;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 94.8%;
+    color: #2F2F2F;
+}
+
+.header-text p {
+    position: absolute;
+    width: 568px;
+    height: 62px;
+    left: 93px;
+    top: 385.94px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 138.8%;
+    /* or 31px */
+
+
+    color: #909090;
+}
+
+.header-button {
+    /* position: relative; */
+}
+
+.header-button .order-now {
+    position: absolute;
+    width: 188px;
+    height: 70px;
+    left: 93px;
+    top: 491.94px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 94.8%;
+    background: #2F2F2F;
+    box-shadow: 0px 20px 32px -8px rgba(0, 0, 0, 0.2);
+    border-radius: 84px;
+    color: #F4ECE1;
+}
+
+.play-button {
+    position: absolute;
+    width: 57px;
+    height: 57px;
+    left: 309px;
+    top: 496.94px;
+    background: #FFF8F0;
+    border-radius: 50%;
+    box-shadow: 0px 20px 36px -16px rgba(0, 0, 0, 0.1);
+}
+
+.play-button a i {
+    font-size: 20px;
+    position: absolute;
+    top: 20px;
+    left: 22px;
+}
+
+.watch-video {
+    position: absolute;
+    left: 377px;
+    top: 516.94px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 94.8%;
+    color: #2F2F2F;
+}
+
+.header-rating {
+    position: absolute;
+    width: 255px;
+    height: 92px;
+    left: 93px;
+    top: 630.94px;
+}
+
+.header-rating .rating-text {
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 35.8%;
+    color: #2F2F2F;
+}
+
+.header-rating .rating-review {
+    color: #909090;
+}
+
+
 .header-image {
+    flex-basis: 50%;
     background: url(../images/banner.png);
     width: 100%;
     min-height: 100vh;
     background-repeat: no-repeat;
-    background-size: cover;
 }

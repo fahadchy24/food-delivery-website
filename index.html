@@ -37,34 +37,44 @@
                     <span class="md-hidden navbar-toggle text-white">
                         <i class="fas fa-bars" id="toggle-icon"></i>
                     </span>
-                    <ul class="sm-hidden">
-                        <li>
-                            <a href="#wrapper" class="btn active">
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#menu" class="btn btn-portfolios">
-                                Menu
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="btn">
-                                Contact
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#shop" class="btn">
-                                Shop
-                            </a>
-                        </li>
-                        <li>
-                            <input type="text" name="search" id="search-box" placeholder="Search">
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </li>
-                    </ul>
+                    <div>
+                        <ul class="sm-hidden">
+                            <li>
+                                <a href="#wrapper" class="">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#menu" class="">
+                                    Menu
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contact" class="">
+                                    Contact
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#shop" class="">
+                                    Shop
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="sm-hidden">
+                            <div class="search-cart">
+                                <span class="search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    Search
+                                </span>
+                                <span class="cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <span class="cart-count">2</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                     <ul class="md-hidden mobile-navbar">
                         <li>
                             <a href="#wrapper">
@@ -105,22 +115,34 @@
 
         <!-- Start Header Banner -->
         <header>
-            <div class="header-banner">
+            <div class="header-banner container-padding">
                 <div class="header-info">
                     <div class="header-text">
-                        <h2>Fast Food Delivery</h2>
+                        <h2> <span class="fast">Fast</span>
+                            <span class="food-delivery">Food Delivery</span></h2>
                         <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident animi aliquam,
+                            Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium
                         </p>
                     </div>
                     <div class="header-button">
-                        <button>Order Now</button>
-                        <button>Watch Video</button>
+                        <button class="order-now">Order Now</button>
+                        <span class="play-button">
+                            <a href="">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </span>
+                        <span class="watch-video">Watch Video</span>
                     </div>
                     <div class="header-rating">
-                        <span></span>
-                        <p>5 star rating</p>
-                        <p>based on 1788 reviews</p>
+                        <span>
+                            <img src="/images/emojione_star.png" alt="star" srcset="">
+                            <img src="/images/emojione_star.png" alt="star" srcset="">
+                            <img src="/images/emojione_star.png" alt="star" srcset="">
+                            <img src="/images/emojione_star.png" alt="star" srcset="">
+                            <img src="/images/emojione_star.png" alt="star" srcset="">
+                        </span>
+                        <p class="rating-text">5 star rating</p>
+                        <p class="rating-review">based on 1788 reviews</p>
                     </div>
                 </div>
                 <div class="header-image"></div>
