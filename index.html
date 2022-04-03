@@ -13,6 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Main CSS Files-->
     <link rel="stylesheet" href="css/style.css">
@@ -120,67 +121,124 @@
                     <div class="header-text">
                         <h2> <span class="fast">Fast</span>
                             <span class="food-delivery">Food Delivery</span></h2>
-                        <p>
+                        <p class="food-delivery-subtitle">
                             Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium
                         </p>
-                    </div>
-                    <div class="header-button">
-                        <button class="order-now">Order Now</button>
-                        <span class="play-button">
-                            <a href="">
-                                <i class="fa-solid fa-play"></i>
-                            </a>
-                        </span>
-                        <span class="watch-video">Watch Video</span>
-                    </div>
-                    <div class="header-rating">
-                        <span>
-                            <img src="/images/emojione_star.png" alt="star" srcset="">
-                            <img src="/images/emojione_star.png" alt="star" srcset="">
-                            <img src="/images/emojione_star.png" alt="star" srcset="">
-                            <img src="/images/emojione_star.png" alt="star" srcset="">
-                            <img src="/images/emojione_star.png" alt="star" srcset="">
-                        </span>
-                        <p class="rating-text">5 star rating</p>
-                        <p class="rating-review">based on 1788 reviews</p>
+                        <div class="header-button">
+                            <button class="order-now">Order Now</button>
+                            <span class="play-button">
+                                <a href="">
+                                    <i class="fa-solid fa-play"></i>
+                                </a>
+                            </span>
+                            <span class="watch-video">Watch Video</span>
+                        </div>
+                        <div class="header-rating">
+                            <span>
+                                <img src="/images/emojione_star.png" alt="star" srcset="">
+                                <img src="/images/emojione_star.png" alt="star" srcset="">
+                                <img src="/images/emojione_star.png" alt="star" srcset="">
+                                <img src="/images/emojione_star.png" alt="star" srcset="">
+                                <img src="/images/emojione_star.png" alt="star" srcset="">
+                            </span>
+                            <p class="rating-text">5 star rating</p>
+                            <p class="rating-review">based on 1788 reviews</p>
+                        </div>
                     </div>
                 </div>
-                <div class="header-image"></div>
+                <div class="header-image">
+                    <img src="/images/banner.png" alt="header-banner">
+                </div>
             </div>
         </header>
         <!-- End Header Banner -->
 
         <!-- Start Todays Trending -->
-        <section class="todays-trending">
-            <div class="section-title">
-                <h2>Todays Trending Food</h2>
-                <p>Peoples loves it most the past week...</p>
-            </div>
-            <div>
+        <section class="todays-trending container-padding">
+            <h3 class="section-title">Todays Trending Food</h3>
+            <h5 class="section-subtitle">Peoples loves it most the past week...</h5>
+            <div class="single-food">
                 <div class="food-image">
-                    <img src="/images/product.jpg" alt="food-image">
+                    <div>
+                        <img src="/images/product.jpg" alt="food-image" class="food-img">
+                    </div>
+                    <div class="thumbnail-image">
+                        <img src="/images/product.jpg" alt="food-image" class="thumbnail">
+                        <img src="/images/product.jpg" alt="food-image" class="thumbnail">
+                        <img src="/images/product.jpg" alt="food-image" class="thumbnail">
+                    </div>
                 </div>
                 <div class="food-info">
                     <div>
-                        <h3>Basomoti Kacchi Biriyani</h3>
+                        <h4>Basomoti Kacchi Biriyani</h4>
                         <p>৳1,050</p>
-                        <span></span>
-                        5.0 out of (1256) Reviews
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span> 5.0 out of (1256) Reviews</span>
+                        </div>
                     </div>
-                    <div>
-                        <h4>Select Quantity</h4>
-                        <input type="checkbox" name="" id="">
-                        <input type="checkbox" name="" id="">
-                        <input type="checkbox" name="" id="">
-                        <input type="checkbox" name="" id="">
-                        <input type="checkbox" name="" id="">
-                        <input type="checkbox" name="" id="">
+                    <div class="quantity-text">
+                        <h5 class="quantity-title">Select Quantity</h5>
+                        <div class="checkbox__section">
+                            <div class="quantity__checkbox">
+                                <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox">
+                                    <span class="checkbox__label">
+                                        <span class="checkbox__text">0.5</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="quantity__checkbox">
+                                <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox">
+                                    <span class="checkbox__label">
+                                        <span class="checkbox__text">1</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="quantity__checkbox">
+                                <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox">
+                                    <span class="checkbox__label">
+                                        <span class="checkbox__text">2</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="quantity__checkbox">
+                                <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox">
+                                    <span class="checkbox__label">
+                                        <span class="checkbox__text">5</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="quantity__checkbox">
+                                <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox">
+                                    <span class="checkbox__label">
+                                        <span class="checkbox__text">10</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="quantity__checkbox">
+                                <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox">
+                                    <span class="checkbox__label">
+                                        <span class="checkbox__text">20</span>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <span>
+                    <div class="product-wishlist-cart">
+                        <span class="product-wishlist">
                             <i class="fa-regular fa-heart"></i>
                         </span>
-                        <span>
+                        <span class="product-cart">
                             <i class="fa-solid fa-cart-plus"></i>
                         </span>
                     </div>
@@ -190,197 +248,261 @@
         <!-- End Todays Trending -->
 
         <!-- Start Popular Items -->
-        <section class="popular-items">
-            <div class="section-title">
-                <h2>Popular Items</h2>
-                <p>Most Ordered Items</p>
-            </div>
+        <section class="popular-items container-padding">
+            <h2 class="section-title">Popular Items</h2>
+            <p>Most Ordered Items</p>
             <div class="food-items">
                 <div class="item">
-                    <img src="/images/product.jpg" alt="food-image">
-                    <div>
+                    <div class="item-image">
+                        <img src="/images/product.jpg" alt="food-image">
+                    </div>
+                    <div class="item-info">
                         <h3>Cappucino</h3>
                         <span>Served with lorem ipsum</span>
                         <h4>
                             ৳1200
                         </h4>
                     </div>
-                    <div>
+                    <div class="item-amount">
                         <i class="fa-solid fa-plus"></i>
-                        <span class="badge">Add</span>
+                        <span class="text-success">Add</span>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="/images/product.jpg" alt="food-image">
-                    <div>
+                    <div class="item-image">
+                        <img src="/images/product.jpg" alt="food-image">
+                    </div>
+                    <div class="item-info">
                         <h3>Bacon, Egg and Sandwich</h3>
-                        <span>Served with Lorem ipsum dolor sit amet... <b>More</b></span>
+                        <span>Served with Lorem ipsum dolor sit amet...</span> <b>More</b>
                         <h4>
-                            <span class="old-price"><strike>৳4999</strike></span>
-                            <span class="new-price">৳4599</span>
+                            <span class="text-black"><strike>৳4999</strike></span>
+                            <span class="text-orange">৳4599</span>
                         </h4>
                     </div>
-                    <div>
-                        <i class="fa-solid fa-minus"></i>
-                        <span class="badge badge-success">99</span>
-                        <i class="fa-solid fa-plus"></i>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="/images/product.jpg" alt="food-image">
-                    <div>
-                        <h3>Cappucino</h3>
-                        <span>Served with lorem ipsum</span>
-                        <h4>
-                            ৳1200
-                        </h4>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-plus"></i>
-                        <span class="badge">Add</span>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="/images/product.jpg" alt="food-image">
-                    <div>
-                        <h3>Bacon, Egg and Sandwich</h3>
-                        <span>Served with Lorem ipsum dolor sit amet... <b>More</b></span>
-                        <h4>
-                            <span class="old-price"><strike>৳4999</strike></span>
-                            <span class="new-price">৳4599</span>
-                        </h4>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-minus"></i>
-                        <span class="badge badge-success">99</span>
-                        <i class="fa-solid fa-plus"></i>
+                    <div class="plus-minus-number bg-success">
+                        <div>
+                            <span class="minus bg-white">
+                                <i class="fa-solid fa-minus"></i>
+                            </span>
+                            <span class="text-white qty">
+                                99
+                            </span>
+                            <span class="plus bg-white">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </div>
                     </div>
                 </div>
 
                 <div class="item">
-                    <img src="/images/product.jpg" alt="food-image">
-                    <div>
+                    <div class="item-image">
+                        <img src="/images/product.jpg" alt="food-image">
+                    </div>
+                    <div class="item-info">
                         <h3>Cappucino</h3>
                         <span>Served with lorem ipsum</span>
                         <h4>
                             ৳1200
                         </h4>
                     </div>
-                    <div>
+                    <div class="item-amount">
                         <i class="fa-solid fa-plus"></i>
-                        <span class="badge">Add</span>
+                        <span class="text-success">Add</span>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="/images/product.jpg" alt="food-image">
-                    <div>
+                    <div class="item-image">
+                        <img src="/images/product.jpg" alt="food-image">
+                    </div>
+                    <div class="item-info">
                         <h3>Bacon, Egg and Sandwich</h3>
-                        <span>Served with Lorem ipsum dolor sit amet... <b>More</b></span>
+                        <span>Served with Lorem ipsum dolor sit amet...</span> <b>More</b>
                         <h4>
-                            <span class="old-price"><strike>৳4999</strike></span>
-                            <span class="new-price">৳4599</span>
+                            <span class="text-black"><strike>৳4999</strike></span>
+                            <span class="text-orange">৳4599</span>
                         </h4>
                     </div>
-                    <div>
-                        <i class="fa-solid fa-minus"></i>
-                        <span class="badge badge-success">99</span>
-                        <i class="fa-solid fa-plus"></i>
+                    <div class="plus-minus-number bg-success">
+                        <div>
+                            <span class="minus bg-white">
+                                <i class="fa-solid fa-minus"></i>
+                            </span>
+                            <span class="text-white qty">
+                                99
+                            </span>
+                            <span class="plus bg-white">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </div>
                     </div>
                 </div>
+
                 <div class="item">
-                    <img src="/images/product.jpg" alt="food-image">
-                    <div>
+                    <div class="item-image">
+                        <img src="/images/product.jpg" alt="food-image">
+                    </div>
+                    <div class="item-info">
                         <h3>Cappucino</h3>
                         <span>Served with lorem ipsum</span>
                         <h4>
                             ৳1200
                         </h4>
                     </div>
-                    <div>
+                    <div class="item-amount">
                         <i class="fa-solid fa-plus"></i>
-                        <span class="badge">Add</span>
+                        <span class="text-success">Add</span>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="/images/product.jpg" alt="food-image">
-                    <div>
+                    <div class="item-image">
+                        <img src="/images/product.jpg" alt="food-image">
+                    </div>
+                    <div class="item-info">
                         <h3>Bacon, Egg and Sandwich</h3>
-                        <span>Served with Lorem ipsum dolor sit amet... <b>More</b></span>
+                        <span>Served with Lorem ipsum dolor sit amet...</span> <b>More</b>
                         <h4>
-                            <span class="old-price"><strike>৳4999</strike></span>
-                            <span class="new-price">৳4599</span>
+                            <span class="text-black"><strike>৳4999</strike></span>
+                            <span class="text-orange">৳4599</span>
                         </h4>
                     </div>
-                    <div>
-                        <i class="fa-solid fa-minus"></i>
-                        <span class="badge badge-success">99</span>
-                        <i class="fa-solid fa-plus"></i>
+                    <div class="plus-minus-number bg-success">
+                        <div>
+                            <span class="minus bg-white">
+                                <i class="fa-solid fa-minus"></i>
+                            </span>
+                            <span class="text-white qty">
+                                99
+                            </span>
+                            <span class="plus bg-white">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </div>
                     </div>
                 </div>
+
+                <div class="item">
+                    <div class="item-image">
+                        <img src="/images/product.jpg" alt="food-image">
+                    </div>
+                    <div class="item-info">
+                        <h3>Cappucino</h3>
+                        <span>Served with lorem ipsum</span>
+                        <h4>
+                            ৳1200
+                        </h4>
+                    </div>
+                    <div class="item-amount">
+                        <i class="fa-solid fa-plus"></i>
+                        <span class="text-success">Add</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-image">
+                        <img src="/images/product.jpg" alt="food-image">
+                    </div>
+                    <div class="item-info">
+                        <h3>Bacon, Egg and Sandwich</h3>
+                        <span>Served with Lorem ipsum dolor sit amet...</span> <b>More</b>
+                        <h4>
+                            <span class="text-black"><strike>৳4999</strike></span>
+                            <span class="text-orange">৳4599</span>
+                        </h4>
+                    </div>
+                    <div class="plus-minus-number bg-success">
+                        <div>
+                            <span class="minus bg-white">
+                                <i class="fa-solid fa-minus"></i>
+                            </span>
+                            <span class="text-white qty">
+                                99
+                            </span>
+                            <span class="plus bg-white">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </section>
         <!-- End Popular Items -->
 
         <!-- Start Contact Us -->
-        <section class="contact-us">
-            <div class="section-title">
-                <h2>Contact Us</h2>
-                <p>Need an experienced and skilled hand with custom IT projects?
-                    Fill out the form to get a free consultation.</p>
-            </div>
-            <div class="contact-form">
-                <form action="" method="post">
-                    <div class="form-group">
-                        <input type="text" name="name" class="input" id="name" placeholder="Your Company Name">
-                    </div>
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" class="input" id="name" placeholder="Nature of Business">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="name" class="input" id="name" placeholder="Address">
-                        <input type="text" name="name" class="input" id="name" placeholder="Post Code">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="name" class="input" id="name" placeholder="Contact Name">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="name" class="input" id="name" placeholder="Contact Phone">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" class="input" id="email" placeholder="email@email.com">
-                        <div class="input-error">
-                            <span>Please, enter valid email address</span>
+        <section class="contact-us container-padding">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="text-default">Need an experienced and skilled hand with custom IT projects?</p>
+            <p class="text-default lh-10"> Fill out the form to get a free consultation.</p>
+            <div class="contact-box">
+                <div class="contact-form">
+                    <form action="" method="post">
+                        <div class="form-group field">
+                            <input type="text" name="company_name" class="form__field" id="company_name"
+                                placeholder="Your Company Name">
+                            <label for="company_name" class="form__label">Your Company Name</label>
                         </div>
+                        <div class="form-group field">
+                            <input type="text" name="business_nature" class="form__field" id="business-nature"
+                                placeholder="Nature of Business">
+                            <label for="business-nature" class="form__label">Name</label>
+                        </div>
+                        <div class="address-postcode">
+                            <div class="address form-group field">
+                                <input type="text" name="name" class="form__field" id="address" placeholder="Address">
+                                <label for="address" class="form__label">Address</label>
+                            </div>
+                            <div class="postcode form-group field">
+                                <input type="text" name="name" class="form__field" id="postcode"
+                                    placeholder="Post Code">
+                                <label for="postcode" class="form__label">Post Code</label>
+                            </div>
+                        </div>
+                        <div class="form-group field">
+                            <input type="text" name="name" class="form__field" id="name" placeholder="Contact Name">
+                            <label for="name" class="form__label">Contact Name</label>
+                        </div>
+                        <div class="form-group field">
+                            <input type="text" name="name" class="form__field" id="name" placeholder="Contact Phone">
+                            <label for="name" class="form__label">Contact Phone</label>
+                        </div>
+                        <div class="form-group field">
+                            <input type="email" name="email" class="form__field" id="email"
+                                placeholder="email@email.com">
+                            <label for="name" class="form__label">email@email.com</label>
+
+                            <span class="text-danger error-text">Please, enter valid email address</span>
+                        </div>
+                        <div class="form-group-checkbox">
+                            <input type="checkbox" name="agree" id="agree">
+                            <label for="agree">I want to protect my data by signing an NDA</label>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success btn-outline">
+                                Send message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="office-location">
+                    <h4>Offices</h4>
+                    <p>
+                        United States <br>
+                        500 5th Avenue Suite 400, NY 10110
+                    </p>
+                    <p>
+                        United Kingdom <br>
+                        High St, Bromley BR1 1DN
+                    </p>
+                    <p>
+                        France <br>
+                        80 avenue des Terroirs de France, Paris
+                    </p>
+                    
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28914.807431860572!2d91.76905472831163!3d25.056092245852412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375054d3d270329f%3A0xf58ef93431f67382!2sSylhet!5e0!3m2!1sen!2sbd!4v1647816759845!5m2!1sen!2sbd"
+                            width="420" height="380" style="border:0;" loading="lazy"></iframe>
                     </div>
-                    <div class="form-group-checkbox">
-                        <input type="checkbox" name="agree" id="agree">
-                        <label for="agree">I want to protect my data by signing an NDA</label>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-success btn-outline">
-                            Send message
-                        </button>
-                    </div>
-                </form>
-            </div>
-            <div class="office-location">
-                <h4>Offices</h4>
-                <p>
-                    United States
-                    500 5th Avenue Suite 400, NY 10110
-                </p>
-                <p>
-                    United Kingdom
-                    High St, Bromley BR1 1DN
-                </p>
-                <p>
-                    France
-                    80 avenue des Terroirs de France, Paris
-                </p>
-                <div>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28914.807431860572!2d91.76905472831163!3d25.056092245852412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375054d3d270329f%3A0xf58ef93431f67382!2sSylhet!5e0!3m2!1sen!2sbd!4v1647816759845!5m2!1sen!2sbd"
-                        width="420" height="380" style="border:0;" loading="lazy"></iframe>
                 </div>
             </div>
         </section>

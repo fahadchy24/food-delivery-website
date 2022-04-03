@@ -8,6 +8,10 @@
     .sm-hidden {
         display: none;
     }
+
+    .header-banner {
+        flex-direction: column-reverse;
+    }
 }
 
 /*  Tablet Devices */
