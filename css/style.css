@@ -728,3 +728,76 @@ a {
     margin: 0 auto;
     flex-basis: 40%;
 }
+
+
+/*********************************************
+                Footer CSS 
+**********************************************/
+
+
+.footer {
+    background-color: #1E2833;
+    color: var(--color-white);
+    padding: 80px 100px 0;
+}
+
+
+.footer-logo {
+    padding-bottom: 48px;
+    border-bottom: 1px solid #979797;
+}
+
+.footer-logo img {
+    width: 40px;
+    height: 35px;
+}
+
+.footer a {
+    color: var(--color-white);
+}
+
+.footer .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-content>div {
+    flex: 0 0 25%;
+}
+
+.footer-content>div:nth-child(1) h4 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 29px;
+}
+
+.footer-content>div:nth-child(2) h4 {
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.footer-content>div:nth-child(3) h4 {
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.footer-content>div:nth-child(4) h4 {
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.footer-content>div ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-content>div ul li {
+    padding-top: 15px;
+}
+
+.bottom-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+}
