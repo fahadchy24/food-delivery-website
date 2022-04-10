@@ -32,6 +32,17 @@ a {
     color: var(--color-black);
 }
 
+.btn {
+    width: 100%;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.btn-success {
+    background: var(--color-green);
+    color: var(--color-white);
+}
+
 .text-left {
     text-align: left;
 }
